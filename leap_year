@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main(){
+    var data uint16
+    
+    fmt.Scanf("%d", &data)
+    
+    if data % 400 == 0 || (data % 4 == 0 && data % 100 != 0){
+        fmt.Print("YES")
+    } else{
+        fmt.Print("NO")
+    }
+}
